@@ -1,0 +1,15 @@
+<div class="show-details">
+  <img [src]="show.image" />
+  <div class="show-info">
+    <h2>{{ show.name }}</h2>
+    <p><strong>Fecha de estreno:</strong> {{ show.firstAirDate }}</p>
+    <p><strong>Nota media:</strong> {{ show.voteAverage }}</p>
+    <p><strong>País:</strong> {{ show.originCountry }}</p>
+    <p><strong>Géneros:</strong> {{ show.genres.join(', ') }}</p>
+    <p class="synopsis"><strong>Sinopsis:</strong> {{ show.synopsis }}</p>
+  </div>
+</div>
+<div class="botonVolver-container">
+  <button class="botonVolver" (click)="goBack()">Volver</button>
+</div>
+

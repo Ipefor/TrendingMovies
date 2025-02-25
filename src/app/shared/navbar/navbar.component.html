@@ -1,0 +1,8 @@
+<nav class="navbar">
+  <div class="navbar-brand">Trending Movies</div>
+  <div class="navbar-links">
+    <a [routerLink]="['/']" routerLinkActive="active">Inicio</a>
+    <a [routerLink]="['/movies']" routerLinkActive="active">Películas</a>
+    <a [routerLink]="['/shows']" [queryParams]="{ tendencia: tendencia, page: page }" routerLinkActive="active">Series</a>
+  </div>
+</nav>

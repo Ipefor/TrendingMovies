@@ -1,0 +1,53 @@
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ebf5fb;
+  border: 1px solid #d6eaf8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.movie-info h2 {
+  margin: 10px 0;
+}
+
+.movie-info p {
+  margin: 5px 0;
+}
+
+.synopsis {
+  text-align: justify;
+  width: 420px;
+}
+
+.botonVolver-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botonVolver {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

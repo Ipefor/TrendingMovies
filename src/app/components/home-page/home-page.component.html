@@ -1,0 +1,12 @@
+<div class="container">
+  <img
+    src="https://files.merca20.com/uploads/2017/12/Cine-1.jpg"
+    alt="Icono de cine"
+    class="icon"
+  />
+  <h2>Descubre las tendencias más actuales</h2>
+  <div class="button-container">
+    <button [routerLink] = "['/movies']">Películas</button>
+    <button [routerLink]="['/shows']" [queryParams]="{ tendencia: tendencia, page: page }">Series</button>
+  </div>
+</div>
