@@ -1,0 +1,20 @@
+@if (object) {
+<div class="object-details">
+  <img [src]="object.image" />
+  <div class="object-info">
+    <h2>{{ object.title }}</h2>
+    <p><strong>Fecha de estreno:</strong> {{ object.releaseDate }}</p>
+    @if (isShow) {
+    <div data-testid="isShowTrue">
+      <p><strong>País:</strong> {{ object.originCountry }}</p>
+      <p><strong>Géneros:</strong> {{ object.genres?.join(", ") }}</p>
+    </div>
+    }
+    <p><strong>Nota media:</strong> {{ object.voteAverage }}</p>
+    <p class="synopsis"><strong>Sinopsis:</strong> {{ object.synopsis }}</p>
+  </div>
+</div>
+<div class="botonVolver-container">
+  <button class="botonVolver" (click)="goBack()">Volver</button>
+</div>
+}
