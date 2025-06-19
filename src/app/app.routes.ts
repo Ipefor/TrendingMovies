@@ -1,30 +1,47 @@
 import { Routes } from '@angular/router';
-import { MoviesComponent } from './components/allMovies/movies/movies.component';
-import { MovieComponent } from './components/allMovies/movie/movie.component';
-import { ShowsComponent } from './components/allShows/shows/shows.component';
-import { ShowComponent } from './components/allShows/show/show.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
-
+import { MoviesComponent } from './features/movies/movies.component';
+import { MovieDetailComponent } from './features/movie-detail/movie-detail.component';
+import { ShowsComponent } from './features/shows/shows.component';
+import { ShowDetailComponent } from './features/show-detail/show-detail.component';
+import { HomePageComponent } from './features/home-page/home-page.component';
+import { LoginComponent } from './features/login/login.component';
+import { authGuard } from './shared/guard/auth.guard';
+import { CallbackComponent } from './features/callback/callback.component';
 
 export const routes: Routes = [
   {
-    path:'', component: HomePageComponent
+    path: '',
+    component: LoginComponent,
+  },
+  {
+    path: 'home',
+    component: HomePageComponent,
+    canActivate: [authGuard]
   },
   {
     path: 'movies',
     component: MoviesComponent,
+    canActivate: [authGuard]
   },
   {
     path: 'movie/:id',
-    component: MovieComponent,
+    component: MovieDetailComponent,
+    canActivate: [authGuard]
   },
   {
     path: 'shows',
     component: ShowsComponent,
-    runGuardsAndResolvers: 'paramsOrQueryParamsChange'
+    canActivate: [authGuard]
   },
   {
     path: 'show/:id',
-    component: ShowComponent,
+    component: ShowDetailComponent,
+    canActivate: [authGuard]
   },
+  {
+    path: 'callback',
+    component: CallbackComponent,
+  },
+
+  //TODO:lazyloading
 ];

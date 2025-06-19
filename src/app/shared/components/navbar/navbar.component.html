@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="navbar-brand">Trending Movies</div>
+  <div class="navbar-links">
+    <a
+      data-testid="redirectHome"
+      [routerLink]="['/home']"
+      routerLinkActive="active"
+    >
+      Inicio
+    </a>
+
+    <a
+      data-testid="redirectMovies"
+      [routerLink]="['/movies']"
+      routerLinkActive="active"
+    >
+      Películas
+    </a>
+
+    <a
+      data-testid="redirectShows"
+      [routerLink]="['/shows']"
+      routerLinkActive="active"
+      >Series</a
+    >
+
+    <button
+      data-testid="redirectLogin"
+      class="logout-button"
+      (click)="logout()"
+    >
+      Cerrar sesión
+    </button>
+  </div>
+</nav>
