@@ -10,10 +10,10 @@ Users can browse trending titles and navigate to detailed views with a fast and 
 
 🛠️ Tech Stack
 
-**Angular 17** — Component-based frontend framework
-**RxJS** — Reactive data handling and asynchronous flows
-**Jest** — Unit testing and mocking (used instead of the default Karma setup)
-**TMDB API** — Source of movie and TV show data
+- **Angular 17**: Component-based frontend framework
+- **RxJS**: Reactive data handling and asynchronous flows
+- **Jest**: Unit testing and mocking (used instead of the default Karma setup)
+- **TMDB API**: Source of movie and TV show data
 
 🚀 Development
 
