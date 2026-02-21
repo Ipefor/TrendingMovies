@@ -1,27 +1,51 @@
-# TrendingMovies
+🎬 TrendingMovies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+TrendingMovies is a web application built with Angular 17 that showcases the most popular movies and TV shows of the moment.
+It consumes data from The Movie Database (TMDB) API to display daily and weekly trending content in a clean, reactive interface.
 
-## Development server
+✨ Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project demonstrates a modern Angular architecture using reactive programming and unit testing best practices.
+Users can browse trending titles and navigate to detailed views with a fast and responsive UI.
 
-## Code scaffolding
+🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Angular 17** — Component-based frontend framework
+**RxJS** — Reactive data handling and asynchronous flows
+**Jest** — Unit testing and mocking (used instead of the default Karma setup)
+**TMDB API** — Source of movie and TV show data
 
-## Build
+🚀 Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run the development server:
+```bash
+ng serve
+```
+Navigate to:
 
-## Running unit tests
+http://localhost:4200/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The app reloads automatically when you modify source files.
 
-## Running end-to-end tests
+🧪 Testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Unit tests are written with Jest, providing faster and more flexible testing compared to the default Angular configuration.
+```bash
+ng test
+```
+📦 Build
 
-## Further help
+Create a production build:
+```bash
+ng build
+```
+The compiled output will be stored in the dist/ directory.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+🎯 Purpose
+
+This project is intended as a practical example of:
+
+- Building a reactive Angular application
+- Integrating a real-world REST API
+- Structuring scalable components
+- Writing maintainable unit tests with Jest
